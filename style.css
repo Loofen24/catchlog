@@ -175,3 +175,16 @@ footer .dot { opacity: .4; margin: 0 8px; }
 
 .section-title { text-align: center; font-size: 1.5rem; margin: 48px 0 6px; letter-spacing: -.01em; }
 .section-sub { text-align: center; color: var(--muted); margin: 0 0 18px; }
+
+/* ---- スクショ ギャラリー ---- */
+.shots {
+  display: flex; gap: 16px; overflow-x: auto; padding: 10px 20px 20px; margin: 0 -20px;
+  scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+}
+.shots::-webkit-scrollbar { height: 0; }
+.shot { flex: 0 0 232px; scroll-snap-align: center; }
+.shot img {
+  width: 100%; display: block; border-radius: 20px;
+  border: 1px solid var(--border); box-shadow: 0 20px 44px rgba(0, 0, 0, 0.45);
+}
+.shot p { color: var(--muted); font-size: .88rem; margin: 12px 6px 0; text-align: center; line-height: 1.6; }
